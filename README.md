@@ -8,3 +8,9 @@ cd lumia-midi-bridge
 py -m pip install -r requirements
 flask --app lumia_midi_bridge_webapi run
 ```
+
+## Example JSON Object
+
+```JSON
+{"midi_device": "VirtualMidiPort1", "channel": 9, "note": 91}
+```
