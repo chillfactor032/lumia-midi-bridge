@@ -1,7 +1,8 @@
 # lumia-midi-bridge
 Web API to relay messages from LumiaStream to midi devices
 
-# Web API 
+## Web API 
+
 ```
 git clone https://github.com/chillfactor032/lumia-midi-bridge.git
 cd lumia-midi-bridge
@@ -14,3 +15,7 @@ flask --app lumia_midi_bridge_webapi run
 ```JSON
 {"midi_device": "VirtualMidiPort1", "channel": 9, "note": 91}
 ```
+
+### Notes
+
+Channel and Note are zero-based and should be between 0-15 and 0-127 respectively.
